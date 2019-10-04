@@ -8,7 +8,7 @@ And the function style, for example: " def isMirror(self, left: TreeNode, right:
 
 And in LeetCode, the if statement written in two line run faster in one line.
 
-Finally, some problem are written only in Java.
+Finally, some problems are written only in Java.
 
 Java solution always provide the best solution.
 
