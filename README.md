@@ -2,9 +2,7 @@
  
 LeetCode solution written by python.
 
-Please Note that python solution may not be the best solution.
-
-And the function style, for example: " def isMirror(self, left: TreeNode, right: TreeNode) -> bool " only avaible in LeetCode.
+Please Note that python solution may not be the best solution. Some of them are, some of them are not.
 
 And in LeetCode, the if statement written in two line run faster in one line.
 
@@ -12,4 +10,4 @@ Finally, some problems are written only in Java.
 
 Java solution always provide the best solution.
 
-You can refer to repository LeetCode_java.
+You can always refer to repository LeetCode_java, and transcript it to Python.
