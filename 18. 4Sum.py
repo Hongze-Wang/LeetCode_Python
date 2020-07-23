@@ -14,5 +14,5 @@ class Solution:
                     for k,t in seen[need]:
                         if len({k,t,i,j}) == 4:
                             res.add(tuple(sorted([nums[k], nums[t], nums[i], nums[j]])))
-                seen[have].append((i ,j))  # avoid collision & this why we should judge the len before add into res
+                seen[have].append((i, j))  # avoid collision & this why we should judge the len before add into res
         return res
