@@ -10,9 +10,7 @@
 8 9
 0 2
 4 6
-8 10
 0 4
-8 12
 0 8
 '''
 
@@ -51,4 +49,3 @@ class Solution:
             interval *= 2
         return lists[0] if k > 0 else lists
         
-    
