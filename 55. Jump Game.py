@@ -5,7 +5,7 @@
 #     def canJump(self, nums: List[int]) -> bool:
 #         n = len(nums)
 #         def canReach(nums, index):
-#             if index ==a n-1:
+#             if index == n-1:
 #                 return True
 #             fur = min(index+nums[index], n-1)
 #             for i in range(index+1, fur+1):
