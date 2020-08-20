@@ -56,9 +56,9 @@ class Solution:
             n -= 1
             
         if con:              # if more than one node
-            con.next = prev
+            con.next = prev  # connext the reversed part with unreversed part
         else:
             head = prev
-        tail.next = cur # connext the reversed part with unreversed part
+        tail.next = cur # connect remain part
             
         return head
