@@ -40,25 +40,27 @@ class Solution:
         if not head:
             return None
         
-        cur, prev = head, None
-        while m > 1:
-            prev = cur
-            cur = cur.next
+        pre, cur = None, head
+        
+        while m > 1:         # 移动到逆置起始结点
+            pre = cur
+            cur = cur.next;
             m, n = m-1, n-1
             
-        tail, con = cur, prev
+        con, tail = pre, cur # pre指向左边未逆置部分 cur指向第一个逆置结点 con, tail保存这两个指针
         
         while n:
-            third = cur.next
-            cur.next = prev
-            prev = cur
-            cur = third
-            n -= 1
+            temp = cur.next
+            cur.next = pre
+            pre = cur
+            cur = temp
+            n -= 1           # 利用pre, cur逆置 标准逆置代码
             
-        if con:              # if more than one node
-            con.next = prev  # connext the reversed part with unreversed part
+        if con:              # 边界判断 不是从头结点就开始逆置的
+            con.next = pre   # 连接左边未逆置部分
         else:
-            head = prev
-        tail.next = cur # connect remain part
-            
+            head = pre       # 从头结点开始逆置 则重置投结点为pre
+        
+        tail.next = cur      # 连接右边未逆置部分
+        
         return head
