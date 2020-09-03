@@ -1,6 +1,8 @@
 # 322. Coin Change
 
 # 找零问题 DP
+# 在取最小值的场景下 一定要把dp数组初始化到一个不能取得的大数float('inf')
+# 取最大值场景 因为默认初始化为0，则没有这个问题
 
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
