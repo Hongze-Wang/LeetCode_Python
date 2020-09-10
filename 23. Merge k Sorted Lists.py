@@ -49,3 +49,5 @@ class Solution:
             interval *= 2
         return lists[0] if k > 0 else lists
         
+# 算法时间复杂度 O(nlogk) k表示链表数量
+# 分治法 带排序 带归并
