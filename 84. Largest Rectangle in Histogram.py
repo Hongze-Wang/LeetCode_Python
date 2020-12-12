@@ -1,5 +1,7 @@
 # 84. Largest Rectangle in Histogram
 # 递增栈解法基于一个假设 最大面积一定在一个递增序列上得到
+# 这是一种贪心的思想 贪心能取得最优解的原因是 贪心解是唯一解
+# 因为只有递增序列能增大面积 贪心策略是唯一的策略 自然也是最优策略
 
 class Solution:
     def largestRectangleArea(self, heights: List[int]) -> int:
