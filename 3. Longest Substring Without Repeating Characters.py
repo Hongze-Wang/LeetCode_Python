@@ -11,3 +11,18 @@ class Solution:
                     start = dic[s[i]] + 1
             dic[s[i]] = i
         return max(max_len, len(s) - start)
+
+
+from collections import defaultdict
+
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        dic = defaultdict(int)
+        start, maxLen = 0, 0
+        
+        for i in range(len(s)):
+            start = max(start, dic[s[i]])
+            maxLen = max(maxLen, i-start+1)
+            dic[s[i]] = i+1
+            
+        return maxLen;
