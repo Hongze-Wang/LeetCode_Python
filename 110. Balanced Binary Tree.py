@@ -25,3 +25,18 @@ class Solution:
         if abs(hl-hr) > 1:
             return -1
         return max(hl, hr) + 1
+
+class Solution:
+    def height(self, root):
+        if not root:
+            return 0
+        else:
+            return max(self.height(root.left), self.height(root.right)) + 1
+    
+    def isBalanced(self, root: TreeNode) -> bool:
+        if not root:
+            return True
+        
+        if abs(self.height(root.left) - self.height(root.right)) > 1:
+            return False
+        else: return self.isBalanced(root.left) and self.isBalanced(root.right)
