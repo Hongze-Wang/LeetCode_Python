@@ -7,7 +7,7 @@ class Solution:
             left = i
             right = i
             while right + 1 < len(s) and s[right+1] == s[left]:
-                    right += 1
+                right += 1
             i = max(i, right)
             while left >= 0 and right <len(s) and s[left] == s[right]:
                 left -= 1
