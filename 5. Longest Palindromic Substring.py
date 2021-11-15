@@ -9,7 +9,7 @@ class Solution:
             while right + 1 < len(s) and s[right+1] == s[left]:
                 right += 1
             i = max(i, right)
-            while left >= 0 and right <len(s) and s[left] == s[right]:
+            while left >= 0 and right < len(s) and s[left] == s[right]:
                 left -= 1
                 right += 1
             if res < right-left-1:
