@@ -15,7 +15,7 @@ class Solution:
         return length
     
     def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
-        if ListNode is None or k <= 0:
+        if head is None or k <= 0:
             return None
         pre, cur, nex = None, None, head
         count = 0
